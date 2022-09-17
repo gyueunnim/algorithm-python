@@ -1,3 +1,4 @@
+# Greedy 연습
 n = 1260
 count = 0
 
