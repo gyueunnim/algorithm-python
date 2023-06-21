@@ -1,5 +1,5 @@
-# algorithm-python-practice
+# algorithm-python
 
-파이썬 적응기
+algorithm with python
 
-one day - one commit
+One day, One commit
