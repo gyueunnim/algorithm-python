@@ -9,7 +9,8 @@ print((apple * 100) + (pear * 12) + (tangerine * 500), "원");
 
 
 #2
-print(35*3.30579,"제곱미터")
+convertRate = 3.30579
+print(35*convertRate,"제곱미터")
 
 
 #3
