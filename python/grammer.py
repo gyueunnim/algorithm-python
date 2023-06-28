@@ -38,6 +38,14 @@ char.join(string) : 문자열 삽입
 string.strip() : 공백 지우기
 string.replace("string1", "string2") : 문자열 바꾸기
 string.split() : 문자열 나누기
+
+예시 
+print('Hello', 'Easy', 'Python', sep=', ')
+print('Hello', 'Easy', 'Python', sep=', ', end='--')
+print('Hello', end='\n\n') # 기본값은 \n임
+print('Easy', end='--')
+print('Python')
+
 '''
 
 # 리스트
