@@ -118,3 +118,22 @@ a, b = ('python', 'c')
 a = b = 'python'
 a, b = b, a # 두 값을 바꿈
 '''
+
+# in, not in 연산자
+'''
+1 in [1, 2, 3]
+2 not in [1, 3, 5]
+'''
+
+# pass : 조건문에서 아무 동작하지 않음
+'''
+pocket = ['money', 'phone']
+if 'money' in pocket:
+    pass
+'''
+
+# list comprehension
+'''
+numbers = [1, 2, 3, 4, 5]
+result = [n*2 for n in numbers if n % 2 == 1]
+'''
