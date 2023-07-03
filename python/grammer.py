@@ -137,3 +137,44 @@ if 'money' in pocket:
 numbers = [1, 2, 3, 4, 5]
 result = [n*2 for n in numbers if n % 2 == 1]
 '''
+
+# 함수
+'''
+def 힘수(매개변수) :
+    수행 문장
+    return
+
+def add_many(*args) :
+    result = 0
+    for i in args :
+        result = result + i
+    return result
+
+- 키워드 매개변수
+def print_kwargs(**kwargs) : # **을 붙이면 딕셔너리가 된다.
+    print(kwargs)
+
+global 명령어를 통해 함수 밖에서 변수 공유 가능
+lambda 예약어 : 함수를 한 줄로 간결하게 사용할 때 사용. lambda로 만든 함수는 return 명령어가 없어도 표현식의 결괏값을 리턴.
+'''
+
+# 사용자 입출력
+'''
+input은 입력되는 모든 것을 문자열로 취급한다.
+큰 따옴표로 둘러싸인 문자열은 +연산과 동일하다.
+쉼표를 사용하면 문자열 띄어쓰기를 할 수 있다.
+한 줄에 결괏값을 출력하기 위해선 end=""을 사용한다.
+'''
+
+# 파일 입출력
+'''
+f = open(경로, 옵션)
+f.close()
+with을 사용하면 자동으로 파일을 처리한다.
+'''
+
+# 프로그램 입출력
+'''
+import sys 
+args = sys.argv[1:] 명렁 프롬프트 창의 내용을 가져옴
+'''
