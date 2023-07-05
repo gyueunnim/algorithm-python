@@ -236,3 +236,21 @@ type(object) : 입력값의 자료형이 무엇인지 알려준다.
 zip() : 동일한 개수로 이루어진 데이터들을 묶어서 리턴한다.
 '''
 
+# 표준 라이브러리
+'''
+datetime.data(year, month, day): 연, 월, 일 표시
+time : 시간 관련 다양한 함수 존재
+math.gcd : 최대 공약수
+math.lcm : 최소 공배수
+random : 닌수 발생
+itertools.zip_longest : zip과 유사하게 동작한다. 그러나 길이가 다를 경우 fillvalue에 맞춰 짧은 객체에 넣을 수 있다.
+itertools.permutation : 반복 가능 객체 중에서 r개를 선택한 순열을 iterater로 리턴한다.
+itertools.combination : 반복 가능 객체 중에서 r개를 선택한 조합을 iterater로 리턴한다.
+itertools.combination_with_replacement() : 중복조합
+functools.reduce(function, iterable) : 왼쪽에서 오른쪽으로 함수를 적용해 하나로 줄인다.
+ex) result = functools.reduce(lambda x, y : x + y, [1, 2, 3, 4, 5])
+operator.itemgetter() : sorted와 함께 자주 사용된다.
+ex) result = sorted(students, key=itemgetter(1))
+튜플이 아닌 객체라면 attrgetter()를 적용한다.
+ex) result = sorted(students, key=attrgetter('age')
+'''
