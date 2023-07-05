@@ -178,3 +178,33 @@ with을 사용하면 자동으로 파일을 처리한다.
 import sys 
 args = sys.argv[1:] 명렁 프롬프트 창의 내용을 가져옴
 '''
+
+# 클래스
+'''
+class FourCal :
+    def __init__(self, first, second) :
+        self.first = first
+        self.second = second
+    add = lambda self: self.first + self.second
+    sub = lambda self: self.first - self.second
+    mul = lambda self: self.first * self.second
+    div = lambda self: self.first / self.second
+
+# self는 관례이다.
+# FourCal.메서드()를 할 경우 파라미터에 객체가 필요하다.
+
+class MoreFourCal(FourCal) :
+    def pow(self) :
+        return self.first ** self.second
+
+class SafeFourCal(FourCal) :
+    def div(self) :
+        if self.second == 0 :
+            return 0
+        else :
+            return self.first / self.second
+
+class Family :
+    lastName = "Jang"
+
+'''
