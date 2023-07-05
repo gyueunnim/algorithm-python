@@ -3,8 +3,10 @@
 
 # 2
 # a = {'A': 0, 'B': 80}
+# a.get('C', 70)
 
 # 3
+# 주소값의 차이
 
 # 4
 '''
@@ -18,18 +20,11 @@ print(total)
 # 5
 '''
 def fibo(n) :
-    f1 = 0
-    f2 = 1
-    print(f1, f2, sep=", ", end=', ')
-    i = 0
-    while i<n-2 :
-        f3 = f1 + f2
-        print(f3, end=", ")
-        f1 = f2
-        f2 = f3
-        i += 1
-    print()
-fibo(5)
+    if n == 0 : return 0
+    if n == 1 : return 1
+    return fib(n-2) + fib(n-1)
+for i in range(10) :
+    print(fib(i))
 '''
 
 # 6
@@ -67,3 +62,5 @@ cal2 = Calculator([6, 7, 8, 9, 10])
 print(cal1.sum(), cal1.avg())
 print(cal2.sum(), cal2.avg())
 '''
+
+# 11 ~ # 20 고급 파이썬
