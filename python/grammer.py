@@ -206,5 +206,33 @@ class SafeFourCal(FourCal) :
 
 class Family :
     lastName = "Jang"
-
 '''
+
+# 내장 함수
+'''
+abs(x) : 절댓값 리턴
+all(x) : 모든 요소가 참이면 True
+any(x) : 하나라도 참이면 True
+chr(i) : 유니코드 숫자를 문자로 리턴 vs ord()
+dir() : 객체가 지닌 변수나 함수를 보여준다.
+divmod(a, b) : 몫과 나머지를 튜플로 리턴한다.
+enumerate() : for문과 주로 사용되며 index와 값을 알려준다.
+eval() : 문자열을 실행한 결괏값을 리턴한다.
+filter() : 참인 것만 묶어서 리턴한다.
+id() : 주소값을 리턴한다.
+isinstance(object, class) : 객체가 그 클래스의 인스턴스인지 판단한다.
+len(s) : 길이를 리턴
+list() : 리스트로 만든다.
+map(f, iterable) : 입력받은 데이터의 각 요소에 f를 적용한다.
+max, min : 최대, 최소값을 리턴한다
+pow(a, b) : 제곱한 결과를 리턴한다
+range() : for문과 자주 사용한다. 범위 값을 iterable하게 만든다.
+round() : 반올림
+sorted() : 데이터를 정렬한 후 리스트로 리턴한다.
+str(object) : 문자열 형태로 객체를 변환하여 리턴한다.
+sum(iterable) : 데이터의 합을 리턴한다.
+tuple(iterable) : 튜플로 바꾼다.
+type(object) : 입력값의 자료형이 무엇인지 알려준다.
+zip() : 동일한 개수로 이루어진 데이터들을 묶어서 리턴한다.
+'''
+
