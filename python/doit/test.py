@@ -1,19 +1,21 @@
-from typing import Any, Sequence
+def card_conv(x: int, r: int) -> str:
+    d = ''
+    dchar = '01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    n = len(str(x))
+    print(f'{r:2} | {x:d}')
 
-def max_of(a: Sequence) -> Any:
-    maximun = a[0]
-    for i in range(1, len(a)):
-        if maximun < a[i]:
-            maximun = a[i]
+    while x > 0:
+        print('   +'+(n+2) *'-')
+        if x // r:
+            print(f'{r:2} | {x//r:{n}} ... {x%r}')
+        else:
+            print(f'     {x//r:{n}} ... {x%r}')
+        d += dchar[x % r]
+        x //= r
 
-    return maximun
+    return d[::-1]
 
-if __name__ == '__main__':
-    num = int(input('원소수 입력: '))
+no = int(input('변환할 값 : '))
+cd = int(input('진수 : '))
 
-    x = [None] * num
-
-    for i in range(num):
-        x[i] = int(input(f'x[{i}]의 값을 입력하세요: '))
-
-    print(f'최댓값은 {max_of(x)}')
+print(f'{no}는 {cd}진수로 {card_conv(no, cd)}입니다.')
