@@ -1,51 +1,47 @@
-# -*- coding: utf-8 -*-
+# 1010
+'''
+import math
 
-# list
-usedCar1 = ['K5', 'white', 5000] 
+t = int(input())
+result = []
 
-# dictionary
-usedCar2 = {
-    'brand': 'BMW', 
-    'model': '520d'
-}
+for _ in range(t) :
+    n, m = map(int, input().split())
+    bridge = math.factorial(m) // (math.factorial(n) * math.factorial(m-n))
+    result.append(bridge)
 
-# 중고차 판매 예시
+for i in result :
+    print(i)
+'''
 
-# carStock = ['K5', 'BMW', 'Tico']
+# 1094
+'''
+stickArray = [64]
+X = int(input())
+while True :
+    if sum(stickArray) == X :
+        break
+    halfStick = min(stickArray) / 2
+    stickArray.remove(min(stickArray))
+    stickArray.extend([halfStick, halfStick])
+    if sum(stickArray) - halfStick >= X :
+        stickArray.remove(halfStick)
 
-# 파이썬 조건문 작성법
-# if 조건식 : 
-    # 조건식이 참일 때 실행할 코드
+print(len(stickArray))
+'''
 
-# if 'K6' in carStock :
-    # print('지금 주문 가능합니다.')
-# elif 'K5' in carStock :
-    # print('한 대 남았습니다.')
-# else :
-    # print('주문 불가능')
+# 1181
+'''
+n = int(input())
+words = []
+for i in range(n) :
+    words.append(input())
+words = list(set(words))
+words.sort()
+words.sort(key=len)
+#words = sorted(words)
+#words = sorted(words, key=lambda x: len(x))
+for i in words :
+    print(i)
+'''
 
-# 파이썬 반복문 작성법
-# for i in range(0, 10) :
-    # print('BMW  있어요')
-
-# usedCars = ['K5', 'BMW', 'Tico']
-
-# for i in usedCars :
-    # print(i * 3)
-
-# for i in range(0, 3) :
-    # print(usedCars[i])
-
-# python 함수 작성법
-def Hello() :
-    for i in range(0, 3) :
-        print('안녕하세요 중고차 판매자입니다.')
-    
-
-def Para(p) :
-    print(p + 1) # 자료 변환기도 활용
-
-def func() :
-    return 10
-
-print(func())
