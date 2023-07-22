@@ -77,7 +77,11 @@ def select_menu() -> Menu:
 s = FixedStack(64)
 
 while True:
-    print(f'현재 데이터 개수: {len(s)}/{s.capacity}')   # s의 요소는 stk, capacity, ptr이 있는데 왜 0?
+    # __function__(len) #
+    # 매직메서드, 던더 메서드
+    # 내장 함수를 오버라이드 -> 일관성, 편의성 제공
+    # if a in b는 __contains__()와 매핑 등
+    print(f'현재 데이터 개수: {len(s)}/{s.capacity}')   # s의 요소는 stk, capacity, ptr이 있는데 왜 0? -> FixedStack 클래스의 __len__(s)와 매핑된다.
     menu = select_menu()
 
     if menu == Menu.푸시:
@@ -103,7 +107,7 @@ while True:
 
     elif menu == Menu.검색:
         x = int(input('검색할 값을 입력하세요: '))
-        if x in s:  # s의 모든 요소에서 x를 찾는 것인지?
+        if x in s:  # s의 모든 요소에서 x를 찾는 것인지? -> FixedStack 클래스의 __contains__(x)와 매핑된다.
             print(f'{s.count(x)}개 포함되고, 맨 앞의 위치는 {s.find(x)}입니다.')
         else:
             print('검색값을 찾을 수 없습니다.')
