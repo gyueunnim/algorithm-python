@@ -1,4 +1,4 @@
-#
+# 좋은 수 구하기 (백준 1253)
 import sys
 input = sys.stdin.readline
 
